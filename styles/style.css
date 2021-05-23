@@ -1,0 +1,89 @@
+
+
+div form
+{
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+  	background-color: #d5eef7;
+  	padding: 20px;
+  	width: 50%;
+
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+div#intro{
+	background-color: #d5eef7;
+}
+
+body{
+  background-image: url(../images/background.jpg);
+  font-family: 'Spartan', sans-serif;
+}
+
+
+input.textinput, textarea{
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+
+.textinput:focus{
+  border: 2px solid #b4e7fa;
+  outline: none !important;
+}
+
+.multi{
+  width: 40%;
+  margin: auto;
+  text-align: left;
+}
+
+#intro{
+  padding-bottom: 50px;
+}
+
+#personInfo{
+  padding-bottom: 50px;
+}
+
+#evaluation{
+  padding-bottom: 50px;
+}
+
+#comments{
+  padding-bottom: 50px;
+}
+
+.normal{
+  font-size: 17px;
+  text-align: left;
+}
+
+h3{
+  font-size: 26px;
+}
+
+h1{
+  font-size: 32px;
+}
+
+button {
+  background-color: #5ca4bf; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 30px;
+}

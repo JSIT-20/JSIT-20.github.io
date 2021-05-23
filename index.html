@@ -1,10 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Sondage - Hall of Fame/Shame</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
 </head>
 <body>
 
+
+	<div>
+	<form name='Sondage' method="POST">
+
+		<div id='intro'>
+			<h1>Sondage</h1>
+			<p class="normal">Qu'est ce que vous pensez de l'interface usager du site web de <a href="https://gfuel.com/">gfuel</a>?</p>
+			<a href="https://gfuel.com/"><img src="images/gfuel.png" width='75%' height='75%' alt='https://gfuel.com/'></a>
+		</div>
+
+		<div id = 'personInfo'>
+			<h3>Information personnelle</h3>
+			<p class="normal">
+				First name: 
+				<input class='textinput' type="text" name="firstname">
+			</p>
+			<p class="normal">
+				Last name: 
+				<input class='textinput' type="text" name="lastname">
+			</p>
+		</div>
+
+		<div id='evaluation'>
+			<h3>Évaluation du site web</h3>
+
+			<p class="normal">Sur une échelle de 1 à 10, jugez la cohérence du site web</p>
+			<input class='textinput' type="number" name="coherence" max='10' min='1' step='1'>
+
+			<p class="normal">Sur une échelle de 1 à 10, jugez l'efficacité du site web</p>
+			<input class="textinput" type="number" name="coherence" max='10' min='1' step='1'>
+
+			<p class="normal">En considérant les six buts d'une interface usager, lequel est-ce le moins bien implémenté sur le site web de gfuel?</p>
+			<div class="multi">
+				<input type="radio" name="worst" id='best_fonc' value="fonc_correct">
+				<label for="best_fonc">Fonctionnement correct</label><br>
+				<input type="radio" name="worst" id='best_coherence' value="coherence">
+				<label for="best_coherence">Cohérence</label><br>
+				<input type="radio" name="worst" id='best_eff' value="efficacite">
+				<label for="best_eff">Efficacité</label><br>
+				<input type="radio" name="worst" id='best_util' value="utilisabilite">
+				<label for="best_util">Utilisabilité</label><br>
+				<input type="radio" name="worst" id='best_fiab' value="fiabilite">
+				<label for="best_fiab">Fiabilité</label><br>
+				<input type="radio" name="worst" id='best_secu' value="security">
+				<label for="best_secu">Sécurité et intégrité des données</label><br>
+			</div>
+
+			<p class="normal">Parmis les sous-pages du site web de gfuel, choisissez celles qui ne sont pas bien implémentées selon vous</p>
+			<div class="multi">
+				<input type="checkbox" name="bad_pages" id="home" value="home">
+				<label for="home">Home</label><br>
+				<input type="checkbox" name="bad_pages" id="week" value="week">
+				<label for="week">Weekly Promotions</label><br>
+				<input type="checkbox" name="bad_pages" id="shop" value="shop">
+				<label for="shop">Shop Now</label><br>
+				<input type="checkbox" name="bad_pages" id="build" value="build">
+				<label for="build">Build your Own</label><br>
+				<input type="checkbox" name="bad_pages" id="learn" value="learn">
+				<label for="learn">Learn More</label><br>
+				<input type="checkbox" name="bad_pages" id="company" value="company">
+				<label for="company">Our Company</label><br>
+				<input type="checkbox" name="bad_pages" id="rewards" value="rewards">
+				<label for="rewards">Rewards</label><br>
+				<input type="checkbox" name="bad_pages" id="entertainment" value="entertainment">
+				<label for="entertainment">Entertainment</label><br>
+				<input type="checkbox" name="bad_pages" id="store" value="store">
+				<label for="store">Store Locator</label><br>
+			</div>
+
+
+			<p class="normal">Parmis la liste ci-dessous, qu'elle saveur de gfuel semble la meilleure pour vous?</p>
+			<select name='flavor'>
+				<option value='watermelon'>Watermelon</option>
+				<option value='shinysplash'>Shiny Splash</option>
+				<option value='hypesauce'>Hype Sauce</option>
+				<option value='blueice'>Blue Ice</option>
+			</select>
+
+
+			<p class="normal">Est-ce que le site web semble fonctioner correctement? Si non, décrivez les problèmes ici</p>
+			<textarea class="textinput" name='functionality'></textarea>
+			<p class="normal">Est-ce que le site web semble avoir des problèmes de sécurité et d'intégrité des données? Si oui, décrivez les ici</p>
+			<textarea class="textinput" name='security'></textarea>
+		</div>
+
+		<div id='comments'>
+			<h3>Commentaires additionnels</h3>
+			<textarea class="textinput" name='add_comments'></textarea>
+		</div>
+
+		<button>Soumettre</button>
+
+		<footer>
+			<p>Auteur: Jean-Sebastien Demers</p>
+		</footer>
+	</form>
+	</div>
+
 </body>
 </html>
-Hello World
