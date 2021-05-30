@@ -58,6 +58,34 @@ var products = [
 		noix: true,
 		price: 2.80,
 		organic: true
+	},
+	{
+		name: "Barre de chocolat au lait",
+		lactose: false,
+		noix: true,
+		price: 3.45,
+		organic: false
+	},
+	{
+		name: "laitue",
+		lactose: true,
+		noix: true,
+		price: 0.85,
+		organic: true
+	},
+	{
+		name: "Chips",
+		lactose: true,
+		noix: true,
+		price: 2.65,
+		organic: false
+	},
+	{
+		name: "Spaghetti",
+		lactose: true,
+		noix: true,
+		price: 1.75,
+		organic: true
 	}
 ];
 	
