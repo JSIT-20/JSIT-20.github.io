@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<title>Épicerie Demers</title>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+
+<h1>Épicerie Demers</h1>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<!--
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+-->
+
+<!-- Tab content -->
+<div class="tabcontent">
+  <h2>Nouveaux clients</h2>
+  <p>Mes deux personnages additionnels sont Hélène qui est une femme agée et Marc qui est un jeune père de famille. Pour les aider à faire leurs achats de façon efficace, j'ai ajouté la fonctionnalité de sauvegarder son chariot. En cliquant sur le bouton 'Voir le chariot', l'option de sauvegarder et d'importer un chariot est implémentée. C'est bien pour Hélène puisqu'elle n'est pas très habile avec les sites webs, donc elle peut faire la même commande chaque semaine facilement. C'est bien pour Marc aussi puisque ça lui permet de sauver du temps (il n'a pas besoin de faire la même commande chaque semaine manuellement).
+    <br>
+    <br>
+  Le chariot reste sauvegardé tant que la page n'est pas actualisée (il n'y a pas de backend ou de cookies, donc la sauvegarde est perdu quand le site est actualisé).</p>
+</div>
+
+<div id="Client" class="tabcontent"> 
+  <h2>Données personnelles</h3>
+  <p>Parlez nous de vous.</p>
+	Choisissez une catégorie:
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="lactose">Intolérance au lactose</option>
+    <option value="noix">Allergie aux noix</option>
+    <option value="deux">Les deux</option>
+    <option value="None">None</option>
+	</select>
+	<p>Préférez vous les produits organiques? En cliquant sur le checkbox ci-bas, les produits organiques seront montrés en premier. Les prix seront toujours montrés en ordre croissant, mais dans leurs deux sous groupes (produits organiques et non organiques).</p>
+	<input type="checkbox" name="organic_check" id="organic_check" onchange="populateListProductChoices('dietSelect', 'displayProduct')">
+</div>
+
+<div id="Products" class="tabcontent">
+  <h2>Choix des produits</h3>
+  <p>Nous avons choisis des produits selon vos restrictions.</p>
+  <p>Voici la légende associée aux icones:</p>
+  <div id="legend"> 
+  	<div>
+  		<img src="https://www.kindpng.com/picc/m/426-4266979_dairy-lactose-free-icon-png-transparent-png.png">
+  		<span>Produit sans lactose</span>
+  	</div>
+  	<div>
+  		<img src="https://static.thenounproject.com/png/125059-200.png">
+  		<span>Produit sans noix</span>
+  	</div>
+  	<div>
+  		<img src="https://img.icons8.com/ios/452/organic-food.png">
+  		<span>Produit organique</span>
+  	</div>
+  </div>
+	 <p id="categorie">Choisissez les items à acheter:</p>
+	 <div id="displayProduct"></div>
+   <div id="productButtons">
+     <button id="seeCart" onclick="document.getElementById('Cart').style.display='block'">Voir le chariot</button>
+   </div>
+</div>
+
+
+<div id="Cart" class="modal">
+  <div class="modal-content animate">
+    <span onclick="document.getElementById('Cart').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+    <h2>Panier</h3>
+    <p>Voici votre chariot.</p>
+    <div id="displayCart"></div>
+    <button class="cartOps" onclick="saveCart()">Sauvegarder le chariot</button>
+    <button class="cartOps" onclick="loadCart()">Importer le chariot sauvegardé</button>
+  </div>
+</div>
+
+<footer>
+	<p>Auteur Jean-Sébastien Demers</p>
+	<p>Ce site web est une version modifiée du code source fournis par Professeure Caroline Barrière pour le cours SEG 3525</p>
+</footer>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
