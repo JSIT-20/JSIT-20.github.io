@@ -1,0 +1,65 @@
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.navbar{
+	justify-content: space-around;
+	color:black;
+	background:none;
+}
+
+#title{
+	font-size: 3vw;
+	font-weight: 600;
+}
+
+.first-img{
+	opacity: 0.8;
+	filter: brightness(80%);
+	width:100%;
+}
+
+.dark-img{
+	opacity: 0.8;
+	filter: brightness(85%);
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.who_we_are{
+	width: 90%;
+}
+
+.address{
+	width: 90%;
+}
+
+.servicesAndExperts{
+	width: 90%;
+}
+
+
+.fixed-top.scrolled {
+  background-color: #f2f1eb !important;
+  color: black;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 200ms linear;
+}
+
+.icon{
+	width: 3vw;
+	margin-right: 2rem;
+}
+
+.accordion-button{
+	font-size: 1.5rem;
+}
+p{
+	font-size: 1.1rem;
+}
+
+li{
+	font-size: 1.1rem;
+}

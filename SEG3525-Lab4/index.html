@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Physio Demers</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400,500,600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<!-- Multiple components, like the navbar and modal, taken and modified from bootstrap documentation -->
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top pb-0">
+		<div class="container-fluid-nav text-center in-nav">
+			<p id="title"><img class="icon" src="https://image.flaticon.com/icons/png/512/763/763965.png">Bienvenue au Physio Demers</p>
+		</div>
+	</nav>
+
+	<div class="container-fluid p-0">
+		<img src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/1883163.jpg" class="img-fluid first-img">
+	</div>
+
+	<div class="container-fluid who_we_are p-3 my-3 border bg-light">
+		<h2>Qui sommes nous?</h2>
+		<p>Nous sommes une équipe de professionnels de la santé dédiés à augmenter la qualité de vie des gens. <br> Notre équipe compte plus d'une douzaine de spécialistes, tels que plusieurs physiothérapeutes, physiatres et massothérapeutes. Vous en trouverez quelques uns sous la section 'Notre équipe' en bas de la page.</p>
+	</div>
+
+	<div class="container-fluid address p-3 my-3 border bg-light">
+		<h2>Notre adresse</h2>
+		<p>Nous sommes situés au 376 rue Bona, Ottawa, Ontario</p>
+	</div>
+
+	<div class="container-fluid servicesAndExperts mb-5">
+		<div class="accordion" id="accordionPanelsStayOpenExample">
+		  <div class="accordion-item">
+		    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+		      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+		        Services offerts
+		      </button>
+		    </h2>
+		    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+		      <div class="accordion-body">
+				<div class="row mb-3">
+				  <div class="col-sm-4">
+				    <div class="card">
+				    	<img src="assets/TMJ.PNG" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+				      <div class="card-body">
+				        <h3 class="card-title">Traitement du TMJ</h3>
+				        <p>Le TMJ est une articulation dans la machoire. Des problèmes avec cette articulation peuvent causer les symptômes suivants:</p>
+				        <ul>
+				        	<li>Douleur à la machoire</li>
+				        	<li>Maux de tête</li>
+				        	<li>Maux d'oreils</li>
+				        	<li>Craquements de la machoire</li>
+				        </ul>
+				        <p>Après une évaluation de la situation, nos spécialistes recommandent généralement un programme d'exercises spécialisé, des massages de la machoire, de l'acuponcture et/ou d'autres méthodes de traitement.</p>
+				        <p><strong>Prix de la session initiale: 100$ (90 min)</strong></p>
+				        <p><strong>Prix des sessions subséquentes: 75$ (60 min)</strong></p>
+				        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement du TMJ">Prendre un rendez-vous</button>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="card">
+				    	<img src="https://images.emedicinehealth.com/images/article/main_image/concussion-2.jpg" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+				      <div class="card-body">
+				        <h3 class="card-title">Traitement des commotions cérébrales</h3>
+				        <p>Une commotion cérébrale est une blessure au cerveau causée par une accélération ou décélération rapide du cerveau, causée par un impact, généralement à la tête. Une commotion cérébrale peut causer les symptômes suivants:</p>
+				        <ul>
+				        	<li>Perte de conscience</li>
+				        	<li>Maux de tête</li>
+				        	<li>Maux de cou</li>
+				        	<li>Nausées</li>
+				        </ul>
+				        <p>Nos spécialistes effectuent une série de tests afin de déterminer si une approche conservatrice suffira ou si il faudra prendre une approche plus aggressive pour résoudre les problèmes potentiels</p>
+				        <p><strong>Prix de la session initiale: 110$ (90 min)</strong></p>
+				        <p><strong>Prix des sessions subséquentes: 85$ (60 min)</strong></p>
+				        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement des commotions cérébrales">Prendre un rendez-vous</button>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="card">
+				    	<img src="assets/posture.PNG" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+				      <div class="card-body">
+				        <h3 class="card-title">Traitement des troubles de posture</h3>
+				        <p>Plusieurs troubles de postures peuvent être développés, soit par mauvaises habitudes ou par des asymétries ou débalancements naturels. Des troubles communs sont:</p>
+				        <ul>
+				        	<li>Épaules arrondies</li>
+				        	<li>Position de la tête vers l'avant</li>
+				        	<li>Scoliose</li>
+				        	<li>Cyphose du haut du dos excessive</li>
+				        </ul>
+				        <p>Dépendemment de la condition, les spécialistes vont suggérer des exercises afin d'essayer de rétablir une posture optimale pour le patient, ce qui peut être fait pour réduire des maux présents ou pour réduire les risques de maux futurs.</p>
+				        <p><strong>Prix de la session initiale: 120$ (90 min)</strong></p>
+				        <p><strong>Prix des sessions subséquentes: 95$ (60 min)</strong></p>
+				        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement des troubles de posture">Prendre un rendez-vous</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="row">
+				  <div class="col-sm-4">
+				    <div class="card">
+				    	<img src="assets/fibromyalgie.PNG" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+				      <div class="card-body">
+				        <h3 class="card-title">Traitement contre la fibromyalgie</h3>
+				        <p>La fibromyalgie est une maladie principalement caractérisée par des douleurs musculaires et articulaires diffuses qui peuvent se manifester des façons suivantes:</p>
+				        <ul>
+				        	<li>Raideurs matinales</li>
+				        	<li>Muscles sensibles au toucher</li>
+				        	<li>Impression de gonflement articulaire</li>
+				        	<li>Épisodes de douleur et de fatigue intense</li>
+				        </ul>
+				        <p>Après une évaluation de la situation, nos spécialistes recommandent généralement une rééducation posturale globale (RPG), approche pour obtenir les meilleurs résultats de traitement possible. Celle-ci vise à diminuer les tensions, améliorer l'endurance et aider à gérer la douleur afin de redonner au patient le contrôle de sa vie. </p>
+				        <p><strong>Prix de la session initiale: 100$ (90 min)</strong></p>
+				        <p><strong>Prix des sessions subséquentes: 75$ (60 min)</strong></p>
+				        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement contre la fibromyalgie">Prendre un rendez-vous</button>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="card">
+				    	<img src="assets/fasciite.PNG" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+				      <div class="card-body">
+				        <h3 class="card-title">Traitement de fasciite plantaire</h3>
+				        <p>La fasciite plantaire est l'inflammation du fascia plantaire, ligament attaché à l'os du talon et peut causer les symptômes suivants: </p>
+				        <ul>
+				        	<li>Douleur au talon</li>
+				        	<li>Pincements</li>
+				        	<li>Sensation de chaleur dans le talon</li>
+				        	<li>Sensation d'un pique sous le talon</li>
+				        	<li>Déplacements difficiles</li>
+				        </ul>
+				        <p>Après une évaluation de la situation (examen biomécanique, IRM ou radiographie numérique du pied), nos spécialistes recommandent généralement une série de traitements qui peuvent inclure massages, plan personnalisé d'exercices de souplesse et d'étirements, thérapie manuelle du pied par nos podiatres, orthèse plantaire, injection de cortisone ou laser thérapeutique. </p>
+				        <p><strong>Prix de la session initiale: 85$ (90 min)</strong></p>
+				        <p><strong>Prix des sessions subséquentes: 65$ (60 min)</strong></p>
+				        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement de la fasciite plantaire">Prendre un rendez-vous</button>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="card">
+				    	<img src="assets/vestibulaire.PNG" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+				      <div class="card-body">
+				        <h3 class="card-title">Traitement d'un trouble vestibulaire</h3>
+				        <p>Un problème de fonctionnement du système vestibulaire prend source dans l'oreille interne et peut causer les symptômes suivants: </p>
+				        <ul>
+				        	<li>Étourdissement</li>
+				        	<li>Vertige</li>
+				        	<li>Vision floue</li>
+				        	<li>Nausées</li>
+				        </ul>
+				        <p>Après une évaluation de la situation, nos spécialistes recommandent généralement une rééducation vestibulaire. Ce traitement actif implique un programme d'exercices quotidien personnalisé qui exposeront le patient à des stimulis pour permettre à son organisme de s'y habituer et de provoquer ainsi moins de symptômes. </p>
+				        <p><strong>Prix de la session initiale: 95$ (90 min)</strong></p>
+				        <p><strong>Prix des sessions subséquentes: 70$ (60 min)</strong></p>
+				        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement d'un trouble vestibulaire">Prendre un rendez-vous</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="accordion-item">
+		    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+		        Notre équipe
+		      </button>
+		    </h2>
+		    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+		      <div class="accordion-body">
+
+		      	<div class="card mb-3">
+				  <div class="row g-0">
+				    <div class="col-md-4">
+				      <img src="assets/Person1.PNG" alt="...">
+				    </div>
+				    <div class="col-md-8">
+				      <div class="card-body">
+				        <h3 class="card-title mb-3">Jean-Christophe Demers</h3>
+				        <p class="card-text">Physiothérapeute, propriétaire. Diplômé de l'Université McGill avec un baccalauréat ès sciences en physiologie et une mineure en kinésiologie, il détient plus de 25 années d'expérience dans le domaine.  Jean-Christophe utilise une combinaison de thérapie manuelle, de relâchement myofascial, de kinésio-taping et de rééducation par l'exercice pour créer des plans de traitement individualisés répondant aux besoins de sa clientèle. En formation continue, il vise à fournir des services de qualité à tous ses clients. Jean-Christophe peut fournir une thérapie physique en anglais et en francais.  </p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+		        <div class="card mb-3">
+				  <div class="row g-0">
+				    <div class="col-md-4">
+				      <img src="assets/Person2.PNG" alt="...">
+				    </div>
+				    <div class="col-md-8">
+				      <div class="card-body">
+				        <h3 class="card-title mb-3">Angela Lalonde</h3>
+				        <p class="card-text">Physiothérapeute diplômée de l'Université Queens avec une maîtrise en physiothérapie en 1999. Angela s'efforce de prévenir, gérer et traiter les blessures de manière experte grâce à une combinaison de thérapie mécanique et de rééducation active. Elle fournit un traitement de haute qualité pour aider sa clientèle à atteindre ses objectifs de traitement. Angela peut fournir une thérapie physique en anglais et en francais. </p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="card mb-3">
+				  <div class="row g-0">
+				    <div class="col-md-4">
+				      <img src="assets/Person3.PNG" alt="...">
+				    </div>
+				    <div class="col-md-8">
+				      <div class="card-body">
+				        <h3 class="card-title mb-3">David Brown</h3>
+				        <p class="card-text">Physiothérapeute. Diplomé de l'Université Queen's, David pratique depuis plus de vingt ans dans le domaine. Passionné par la santé et le fitness, il intègre l'éducation, l'exercice gradué et la thérapie manuelle dans ses traitements pour obtenir le maximum de résultats fonctionnels pour tous ses clients. Ses domaines d'expertise incluent l'acupuncture, le dry Needling et la réadaptation orthopédique. Il adopte une approche centrée sur le patient et fondée sur des preuves avec un diagnostic précis des conditions orthopédiques. David offre ses traitements en anglais.
+ </p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+		      </div>
+		    </div>
+		  </div>
+	</div>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Prendre un rendez-vous</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Traitement désiré:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Prénom:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Nom:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Adresse courriel:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Numéro de téléphone:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Date et heure du rendez-vous:</label>
+	            <input class="form-control" type="datetime-local" value="2021-06-13T13:45:00" id="example-datetime-local-input">
+	          </div>
+	          <div class="mb-3">
+	            <label for="message-text" class="col-form-label">Décrivez vos symptômes:</label>
+	            <textarea class="form-control" id="message-text"></textarea>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+	        <button type="button" class="btn btn-primary">Envoyer</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
