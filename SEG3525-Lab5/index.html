@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Physio Demers</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
+
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400,500,600&display=swap" rel="stylesheet">
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="scripts/script.js"></script>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#home"><img src="assets/Logo.PNG" width="220" height="42"></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link" aria-current="page" href="#">Accueil</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#about">À propos</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#location">Location</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#treatments">Traitements</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#team">Notre équipe</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container-fluid p-3 my-3 border" id="about">
+		<img src="assets/physio_img.PNG" class="img-fluid mx-auto d-block pb-2 rounded" width="75%">
+		<h2>Qui sommes nous?</h2>
+		<p>Nous sommes une équipe de professionnels de la santé dédiés à augmenter la qualité de vie des gens. <br> Notre équipe compte plus d'une douzaine de spécialistes, tels que plusieurs physiothérapeutes, physiatres et massothérapeutes. Vous en trouverez quelques uns sous la section 'Notre équipe' en bas de la page.</p>
+	</div>
+
+	<div class="container-fluid p-3 my-3 border" id="location">
+		<h2>Notre adresse</h2>
+		<p>Nous sommes situés au 376 rue Bona, Ottawa, Ontario</p>
+	</div>
+
+	<div class="container-fluid p-3 my-3 border" id="treatments">
+		<h2>Services offerts</h2>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Service   <img src="assets/question_icon.PNG" title="Vous pouvez avoir plus d'information sur les traitements en cliquant sur leur nom" class="ml-2" width="25px"></th>
+					<th scope="col">Coût</th>
+					<th scope="col">Prendre rendez-vous</th>
+				</tr>
+				<tr>
+					<td><a class="traitement blueText" data-bs-toggle="modal" data-bs-target="#TMJModal" href="">Traitement du TMJ</a></td>
+					<td>75-100$</td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement du TMJ">Prendre un rendez-vous</button></td>
+				</tr>
+				<tr>
+					<td><a class="traitement blueText" data-bs-toggle="modal" data-bs-target="#commotionModal" href="">Traitement des commotions cérébrales</a></td>
+					<td>85-110$</td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="Modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement des commotions cérébrales">Prendre un rendez-vous</button></td>
+				</tr>
+				<tr>
+					<td class="traitement blueText">Traitement des troubles de posture</td>
+					<td>95-120$</td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement des troubles de posture">Prendre un rendez-vous</button></td>
+				</tr>
+				<tr>
+					<td class="traitement blueText">Traitement contre la fibromyalgie</td>
+					<td>75-100$</td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement contre la fibromyalgie">Prendre un rendez-vous</button></td>
+				</tr>
+				<tr>
+					<td class="traitement blueText">Traitement de fasciite plantaire</td>
+					<td>65-85$</td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement de la fasciite plantaire">Prendre un rendez-vous</button></td>
+				</tr>
+				<tr>
+					<td class="traitement blueText">Traitement d'un trouble vestibulaire</td>
+					<td>70-95$</td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement d'un trouble vestibulaire">Prendre un rendez-vous</button></td>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div class="container-fluid p-3 my-3 border" id="team">
+		<h2>Notre équipe</h2>
+		
+      	<div class="card mb-3">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <img src="assets/Person1.png" class="img-fluid" alt="...">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h3 class="card-title mb-3">Jean-Christophe Demers</h3>
+		        <p class="card-text">Physiothérapeute, propriétaire. Diplômé de l'Université McGill avec un baccalauréat ès sciences en physiologie et une mineure en kinésiologie, il détient plus de 25 années d'expérience dans le domaine.  Jean-Christophe utilise une combinaison de thérapie manuelle, de relâchement myofascial, de kinésio-taping et de rééducation par l'exercice pour créer des plans de traitement individualisés répondant aux besoins de sa clientèle. En formation continue, il vise à fournir des services de qualité à tous ses clients. Jean-Christophe peut fournir une thérapie physique en anglais et en francais.  </p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+        <div class="card mb-3">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <img src="assets/Person2.png" class="img-responsive" alt="...">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h3 class="card-title mb-3">Angela Lalonde</h3>
+		        <p class="card-text">Physiothérapeute diplômée de l'Université Queens avec une maîtrise en physiothérapie en 1999. Angela s'efforce de prévenir, gérer et traiter les blessures de manière experte grâce à une combinaison de thérapie mécanique et de rééducation active. Elle fournit un traitement de haute qualité pour aider sa clientèle à atteindre ses objectifs de traitement. Angela peut fournir une thérapie physique en anglais et en francais. </p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card mb-3">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <img src="assets/Person3.png" class="img-responsive" alt="...">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h3 class="card-title mb-3">David Brown</h3>
+		        <p class="card-text">Physiothérapeute. Diplomé de l'Université Queen's, David pratique depuis plus de vingt ans dans le domaine. Passionné par la santé et le fitness, il intègre l'éducation, l'exercice gradué et la thérapie manuelle dans ses traitements pour obtenir le maximum de résultats fonctionnels pour tous ses clients. Ses domaines d'expertise incluent l'acupuncture, le dry Needling et la réadaptation orthopédique. Il adopte une approche centrée sur le patient et fondée sur des preuves avec un diagnostic précis des conditions orthopédiques. David offre ses traitements en anglais.
+					</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+
+
+
+	<div class="modal fade" id="TMJModal" aria-hidden="true" aria-labelledby="TMJModalLabel" tabindex="-1">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="TMJModalLabel">Description du service</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="card">
+		    	<img src="assets/TMJ.png" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+		      <div class="card-body">
+		        <h3 class="card-title">Traitement du TMJ</h3>
+		        <p>Le TMJ est une articulation dans la machoire. Des problèmes avec cette articulation peuvent causer les symptômes suivants:</p>
+		        <ul>
+		        	<li>Douleur à la machoire</li>
+		        	<li>Maux de tête</li>
+		        	<li>Maux d'oreils</li>
+		        	<li>Craquements de la machoire</li>
+		        </ul>
+		        <p>Après une évaluation de la situation, nos spécialistes recommandent généralement un programme d'exercises spécialisé, des massages de la machoire, de l'acuponcture et/ou d'autres méthodes de traitement.</p>
+		        <p><strong>Prix de la session initiale: 100$ (90 min)</strong></p>
+		        <p><strong>Prix des sessions subséquentes: 75$ (60 min)</strong></p>
+		      </div>
+		    </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal">Prendre un rendez-vous</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="commotionModal" aria-hidden="true" aria-labelledby="commotionModalLabel" tabindex="-1">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="commotionModalLabel">Description du service</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="card">
+		    	<img src="https://images.emedicinehealth.com/images/article/main_image/concussion-2.jpg" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+		      <div class="card-body">
+		        <h3 class="card-title">Traitement des commotions cérébrales</h3>
+		        <p>Une commotion cérébrale est une blessure au cerveau causée par une accélération ou décélération rapide du cerveau, causée par un impact, généralement à la tête. Une commotion cérébrale peut causer les symptômes suivants:</p>
+		        <ul>
+		        	<li>Perte de conscience</li>
+		        	<li>Maux de tête</li>
+		        	<li>Maux de cou</li>
+		        	<li>Nausées</li>
+		        </ul>
+		        <p>Nos spécialistes effectuent une série de tests afin de déterminer si une approche conservatrice suffira ou si il faudra prendre une approche plus aggressive pour résoudre les problèmes potentiels</p>
+		        <p><strong>Prix de la session initiale: 110$ (90 min)</strong></p>
+		        <p><strong>Prix des sessions subséquentes: 85$ (60 min)</strong></p>
+		      </div>
+		    </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal">Prendre un rendez-vous</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+	<div class="modal fade" id="RVModal" tabindex="-1" aria-labelledby="RVModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="RVModalLabel">Prendre un rendez-vous</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Traitement désiré:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Prénom:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Nom:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Adresse courriel:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="phone" class="col-form-label">Numéro de téléphone:</label>
+	            <input type="text" class="form-control" id="phone">
+	          </div>
+	          <div class="mb-3">
+	          	<label for="pickPractitioner" class="col-form-label">Choisir un membre de notre équipe</label>
+	          	<select class="form-select" aria-label="Default select example">
+	          		<option value="JCD">Jean-Christophe Demers</option>
+	          		<option value="AL">Angela Lalonde</option>
+	          		<option value="DB">David Brown</option>
+	          	</select>
+	          </div>
+	          <div class="mb-3">
+	            <label for="recipient-name" class="col-form-label">Date et heure du rendez-vous:</label>
+	            <input class="form-control" type="datetime-local" value="2021-06-13T13:45:00" id="example-datetime-local-input">
+	          </div>
+	          <div class="mb-3">
+	            <label for="message-text" class="col-form-label">Décrivez vos symptômes:</label>
+	            <textarea class="form-control" id="message-text"></textarea>
+	          </div>
+	          <div class="mb-3">
+	          	<p>Date: <input type="text" id="datepicker" title="hello" ></p>
+	          </div>
+
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+	        <button type="button" class="btn btn-primary blueButton">Envoyer</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
