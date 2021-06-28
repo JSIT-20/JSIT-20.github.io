@@ -16,9 +16,9 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
 })
 
 
-var JCDDates = ["08/06/2021","15/06/2021","22/06/2021","29/06/2021","06/07/2021","13/07/2021"];
-var ALDates = ["09/06/2021","16/06/2021","23/06/2021","30/06/2021","07/07/2021","14/07/2021"];
-var DBDates = ["10/06/2021","17/06/2021","24/06/2021","01/07/2021","08/07/2021","15/07/2021"];
+var JCDDates = ["08/06/2021","15/06/2021","22/06/2021","29/06/2021","06/07/2021","13/07/2021", "20/07/2021", "27/07/2021"];
+var ALDates = ["09/06/2021","16/06/2021","23/06/2021","30/06/2021","07/07/2021","14/07/2021", "21/07/2021", "28/07/2021"];
+var DBDates = ["10/06/2021","17/06/2021","24/06/2021","01/07/2021","08/07/2021","15/07/2021", "22/07/2021", "29/07/2021"];
 var activeDates = JCDDates;
 
 function checkInputRV(){
@@ -76,7 +76,7 @@ function validateCardNumber(numberID){
 function validateCardDate(dateID){
 	var i = document.getElementById(dateID).value;
 
-	var filter = /[0-1][0-9][/][0-9]{2}/
+	var filter = /^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$/;
 	if(filter.test(i)){
 		return true;
 	}
@@ -122,7 +122,8 @@ function reinitializeDates(){
     	beforeShowDay: DisableWeekend,
     	onSelect: function(){
   	 		checkInputRV();
-  	 	}
+  	 	},
+  	 	minDate: 0
     });
   } );
 
