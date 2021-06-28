@@ -25,7 +25,7 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-light">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#home"><img src="assets/Logo.PNG" width="220" height="42"></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,17 +55,17 @@
 
 	<div class="container-fluid p-3 my-3 border" id="about">
 		<img src="assets/physio_img.png" class="img-fluid mx-auto d-block pb-2 rounded" width="75%">
-		<h2>Qui sommes nous?</h2>
+		<h2><img class="icon" src="assets/aboutIcon.png"> Qui sommes nous?</h2>
 		<p>Nous sommes une équipe de professionnels de la santé dédiés à augmenter la qualité de vie des gens. <br> Notre équipe compte plus d'une douzaine de spécialistes, tels que plusieurs physiothérapeutes, physiatres et massothérapeutes. Vous en trouverez quelques uns sous la section 'Notre équipe' en bas de la page.</p>
 	</div>
 
 	<div class="container-fluid p-3 my-3 border" id="location">
-		<h2>Notre adresse</h2>
+		<h2><img class="icon" src="assets/locationIcon.png"> Notre adresse</h2>
 		<p>Nous sommes situés au 376 rue Bona, Ottawa, Ontario</p>
 	</div>
 
 	<div class="container-fluid p-3 my-3 border" id="treatments">
-		<h2>Services offerts</h2>
+		<h2><img class="icon" src="assets/serviceIcon.png"> Services offerts</h2>
 		<table class="table">
 			<thead>
 				<tr>
@@ -74,41 +74,41 @@
 					<th scope="col">Prendre rendez-vous</th>
 				</tr>
 				<tr>
-					<td><a class="traitement blueText" data-bs-toggle="modal" data-bs-target="#TMJModal" href="">Traitement du TMJ</a></td>
+					<td><a class="traitement blueText h5" data-bs-toggle="modal" data-bs-target="#TMJModal" href="">Traitement du TMJ</a></td>
 					<td>75-100$</td>
 					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#RVModal" data-bs-whatever="Traitement du TMJ">Prendre un rendez-vous</button></td>
 				</tr>
 				<tr>
-					<td><a class="traitement blueText" data-bs-toggle="modal" data-bs-target="#commotionModal" href="">Traitement des commotions cérébrales</a></td>
+					<td><a class="traitement blueText h5" data-bs-toggle="modal" data-bs-target="#commotionModal" href="">Traitement des commotions cérébrales</a></td>
 					<td>85-110$</td>
-					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="Modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement des commotions cérébrales">Prendre un rendez-vous</button></td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#RVModal" data-bs-whatever="Traitement des commotions cérébrales">Prendre un rendez-vous</button></td>
 				</tr>
 				<tr>
-					<td class="traitement blueText">Traitement des troubles de posture</td>
+					<td><a class="traitement blueText h5" data-bs-toggle="modal" data-bs-target="#postureModal" href="">Traitement des troubles de posture</a></td>
 					<td>95-120$</td>
-					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement des troubles de posture">Prendre un rendez-vous</button></td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#RVModal" data-bs-whatever="Traitement des troubles de posture">Prendre un rendez-vous</button></td>
 				</tr>
 				<tr>
-					<td class="traitement blueText">Traitement contre la fibromyalgie</td>
+					<td><a class="traitement blueText h5" data-bs-toggle="modal" data-bs-target="#fibroModal" href="">Traitement contre la fibromyalgie</a></td>
 					<td>75-100$</td>
-					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement contre la fibromyalgie">Prendre un rendez-vous</button></td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#RVModal" data-bs-whatever="Traitement contre la fibromyalgie">Prendre un rendez-vous</button></td>
 				</tr>
 				<tr>
-					<td class="traitement blueText">Traitement de fasciite plantaire</td>
+					<td><a class="traitement blueText h5" data-bs-toggle="modal" data-bs-target="#fasciiteModal" href="">Traitement de fasciite plantaire</a></td>
 					<td>65-85$</td>
-					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement de la fasciite plantaire">Prendre un rendez-vous</button></td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#RVModal" data-bs-whatever="Traitement de la fasciite plantaire">Prendre un rendez-vous</button></td>
 				</tr>
 				<tr>
-					<td class="traitement blueText">Traitement d'un trouble vestibulaire</td>
+					<td><a class="traitement blueText h5" data-bs-toggle="modal" data-bs-target="#vestibulaireModal" href="">Traitement d'un trouble vestibulaire</a></td>
 					<td>70-95$</td>
-					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Traitement d'un trouble vestibulaire">Prendre un rendez-vous</button></td>
+					<td><button type="button" class="btn btn-primary blueButton" data-bs-toggle="modal" data-bs-target="#RVModal" data-bs-whatever="Traitement d'un trouble vestibulaire">Prendre un rendez-vous</button></td>
 				</tr>
 			</thead>
 		</table>
 	</div>
 
 	<div class="container-fluid p-3 my-3 border" id="team">
-		<h2>Notre équipe</h2>
+		<h2><img class="icon" src="assets/teamIcon.png"> Notre équipe</h2>
 		
       	<div class="card mb-3">
 		  <div class="row g-0">
@@ -184,7 +184,7 @@
 	      </div>
 	      <div class="modal-footer">
 	      	<button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal">Prendre un rendez-vous</button>
+	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-whatever="Traitement du TMJ">Prendre un rendez-vous</button>
 	      </div>
 	    </div>
 	  </div>
@@ -217,7 +217,141 @@
 	      </div>
 	      <div class="modal-footer">
 	      	<button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal">Prendre un rendez-vous</button>
+	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-whatever="Traitement des commotions cérébrales">Prendre un rendez-vous</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="postureModal" aria-hidden="true" aria-labelledby="postureModalLabel" tabindex="-1">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="postureModalLabel">Description du service</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="card">
+		    	<img src="assets/posture.png" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+		      <div class="card-body">
+		        <h3 class="card-title">Traitement des troubles de posture</h3>
+		        <p>Plusieurs troubles de postures peuvent être développés, soit par mauvaises habitudes ou par des asymétries ou débalancements naturels. Des troubles communs sont:</p>
+		        <ul>
+		        	<li>Épaules arrondies</li>
+		        	<li>Position de la tête vers l'avant</li>
+		        	<li>Scoliose</li>
+		        	<li>Cyphose du haut du dos excessive</li>
+		        </ul>
+		        <p>Dépendemment de la condition, les spécialistes vont suggérer des exercises afin d'essayer de rétablir une posture optimale pour le patient, ce qui peut être fait pour réduire des maux présents ou pour réduire les risques de maux futurs.</p>
+		        <p><strong>Prix de la session initiale: 120$ (90 min)</strong></p>
+		        <p><strong>Prix des sessions subséquentes: 95$ (60 min)</strong></p>
+		      </div>
+		    </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-whatever="Traitement des troubles de posture">Prendre un rendez-vous</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="modal fade" id="fibroModal" aria-hidden="true" aria-labelledby="fibroModalLabel" tabindex="-1">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="fibroModalLabel">Description du service</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="card">
+		    	<img src="assets/fibromyalgie.png" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+		      <div class="card-body">
+		        <h3 class="card-title">Traitement contre la fibromyalgie</h3>
+		        <p>La fibromyalgie est une maladie principalement caractérisée par des douleurs musculaires et articulaires diffuses qui peuvent se manifester des façons suivantes:</p>
+		        <ul>
+		        	<li>Raideurs matinales</li>
+		        	<li>Muscles sensibles au toucher</li>
+		        	<li>Impression de gonflement articulaire</li>
+		        	<li>Épisodes de douleur et de fatigue intense</li>
+		        </ul>
+		        <p>Après une évaluation de la situation, nos spécialistes recommandent généralement une rééducation posturale globale (RPG), approche pour obtenir les meilleurs résultats de traitement possible. Celle-ci vise à diminuer les tensions, améliorer l'endurance et aider à gérer la douleur afin de redonner au patient le contrôle de sa vie. </p>
+		        <p><strong>Prix de la session initiale: 100$ (90 min)</strong></p>
+		        <p><strong>Prix des sessions subséquentes: 75$ (60 min)</strong></p>
+		      </div>
+		    </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-whatever="Traitement contre la fibromyalgie">Prendre un rendez-vous</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="fasciiteModal" aria-hidden="true" aria-labelledby="fasciiteModalLabel" tabindex="-1">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="fasciiteModalLabel">Description du service</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="card">
+		    	<img src="assets/fasciite.png" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+		      <div class="card-body">
+		        <h3 class="card-title">Traitement de fasciite plantaire</h3>
+		        <p>La fasciite plantaire est l'inflammation du fascia plantaire, ligament attaché à l'os du talon et peut causer les symptômes suivants: </p>
+		        <ul>
+		        	<li>Douleur au talon</li>
+		        	<li>Pincements</li>
+		        	<li>Sensation de chaleur dans le talon</li>
+		        	<li>Sensation d'un pique sous le talon</li>
+		        	<li>Déplacements difficiles</li>
+		        </ul>
+		        <p>Après une évaluation de la situation (examen biomécanique, IRM ou radiographie numérique du pied), nos spécialistes recommandent généralement une série de traitements qui peuvent inclure massages, plan personnalisé d'exercices de souplesse et d'étirements, thérapie manuelle du pied par nos podiatres, orthèse plantaire, injection de cortisone ou laser thérapeutique. </p>
+		        <p><strong>Prix de la session initiale: 85$ (90 min)</strong></p>
+		        <p><strong>Prix des sessions subséquentes: 65$ (60 min)</strong></p>
+		      </div>
+		    </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-whatever="Traitement de fasciite plantaire">Prendre un rendez-vous</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="vestibulaireModal" aria-hidden="true" aria-labelledby="vestibulaireModalLabel" tabindex="-1">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="vestibulaireModalLabel">Description du service</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="card">
+		    	<img src="assets/vestibulaire.png" alt="..." class="img-responsive card-img-top dark-img" width="100%">
+		      <div class="card-body">
+		        <h3 class="card-title">Traitement d'un trouble vestibulaire</h3>
+		        <p>Un problème de fonctionnement du système vestibulaire prend source dans l'oreille interne et peut causer les symptômes suivants: </p>
+		        <ul>
+		        	<li>Étourdissement</li>
+		        	<li>Vertige</li>
+		        	<li>Vision floue</li>
+		        	<li>Nausées</li>
+		        </ul>
+		        <p>Après une évaluation de la situation, nos spécialistes recommandent généralement une rééducation vestibulaire. Ce traitement actif implique un programme d'exercices quotidien personnalisé qui exposeront le patient à des stimulis pour permettre à son organisme de s'y habituer et de provoquer ainsi moins de symptômes. </p>
+		        <p><strong>Prix de la session initiale: 95$ (90 min)</strong></p>
+		        <p><strong>Prix des sessions subséquentes: 70$ (60 min)</strong></p>
+		      </div>
+		    </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+	        <button class="btn btn-primary blueButton" data-bs-target="#RVModal" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-whatever="Traitement d'un trouble vestibulaire">Prendre un rendez-vous</button>
 	      </div>
 	    </div>
 	  </div>
@@ -235,50 +369,122 @@
 	      <div class="modal-body">
 	        <form>
 	          <div class="mb-3">
-	            <label for="recipient-name" class="col-form-label">Traitement désiré:</label>
-	            <input type="text" class="form-control" id="treatment">
+	            <label for="treatment" class="col-form-label">Traitement désiré:</label>
+	            <input type="text" class="form-control" id="treatment" disabled>
 	          </div>
 	          <div class="mb-3">
-	            <label for="recipient-name" class="col-form-label">Prénom:</label>
-	            <input type="text" class="form-control" id="recipient-name">
+	            <label for="prenom" class="col-form-label">Prénom:</label>
+	            <input type="text" class="form-control" id="prenom" placeholder="John">
 	          </div>
 	          <div class="mb-3">
-	            <label for="recipient-name" class="col-form-label">Nom:</label>
-	            <input type="text" class="form-control" id="recipient-name">
+	            <label for="nom" class="col-form-label">Nom:</label>
+	            <input type="text" class="form-control" id="nom" placeholder="Doe">
 	          </div>
 	          <div class="mb-3">
-	            <label for="recipient-name" class="col-form-label">Adresse courriel:</label>
-	            <input type="text" class="form-control" id="recipient-name">
+	            <label for="email" class="col-form-label">Adresse courriel:</label>
+	            <input type="text" class="form-control" id="email" placeholder="johndoe@gmail.com">
 	          </div>
 	          <div class="mb-3">
 	            <label for="phone" class="col-form-label">Numéro de téléphone:</label>
-	            <input type="text" class="form-control" id="phone">
+	            <input type="text" class="form-control" id="phone" placeholder="345-678-9012">
 	          </div>
 	          <div class="mb-3">
 	          	<label for="pickPractitioner" class="col-form-label">Choisir un membre de notre équipe</label>
-	          	<select class="form-select" aria-label="Default select example">
+	          	<select class="form-select" aria-label="Default select example" id="expertRV">
 	          		<option value="JCD">Jean-Christophe Demers</option>
 	          		<option value="AL">Angela Lalonde</option>
 	          		<option value="DB">David Brown</option>
 	          	</select>
 	          </div>
 	          <div class="mb-3">
-	            <label for="recipient-name" class="col-form-label">Date et heure du rendez-vous:</label>
-	            <input class="form-control" type="datetime-local" value="2021-06-13T13:45:00" id="example-datetime-local-input">
-	          </div>
-	          <div class="mb-3">
-	            <label for="message-text" class="col-form-label">Décrivez vos symptômes:</label>
+	            <label for="message-text" class="col-form-label">Décrivez vos symptômes (optionnel):</label>
 	            <textarea class="form-control" id="message-text"></textarea>
 	          </div>
 	          <div class="mb-3">
-	          	<p>Date: <input type="text" id="datepicker" title="hello" ></p>
+	          	<p>Date du rendez vous: <input type="text" id="datepicker" class="form-control"></p>
+	          </div>
+
+	          <div class="mb-3">
+	          	<label for="timepicker" class="col-form-label">Heure du rendez-vous</label>
+	          	<select class="form-select" aria-label="Default select example" id="timepicker">
+	          		<option value="8">8h00</option>
+	          		<option value="9">9h00</option>
+	          		<option value="10">10h00</option>
+	          		<option value="11">11h00</option>
+	          		<option value="12">12h00</option>
+	          		<option value="13">13h00</option>
+	          		<option value="14">14h00</option>
+	          		<option value="15">15h00</option>
+	          	</select>
 	          </div>
 
 	        </form>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-	        <button type="button" class="btn btn-primary blueButton">Envoyer</button>
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+	        <button id="PayInfo" disabled="true" type="button" class="btn btn-primary blueButton" data-bs-target="#PayModal" data-bs-toggle="modal" data-bs-dismiss="modal">Information de payement <img src="assets/creditIcon.png" width="25px"> <img id="lockRV" src="assets/lockIcon.png" width="17px"></button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="modal fade" id="PayModal" tabindex="-1" aria-labelledby="PayModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="PayModalLabel">Méthode de payement <img src="assets/question_icon.png" title="Nous demandons cette information puisque nous chargerons votre carte si vous ne venez pas au rendez-vous. En cas normal, vous pourrez payer en personne." class="ml-2" width="25px"></h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="mb-3">
+	            <label for="cardNum" class="col-form-label">Numéro de carte</label>
+	            <input type="text" class="form-control" id="cardNum" placeholder="1234 5678 9012 3456">
+	          </div>
+	          <div class="mb-3">
+	            <label for="cardName" class="col-form-label">Nom sur la carte</label>
+	            <input type="text" class="form-control" id="cardName" placeholder="John Doe">
+	          </div>
+	          <div class="mb-3">
+	            <label for="cardDate" class="col-form-label">Date d'expiration</label>
+	            <input type="text" class="form-control" id="cardDate" placeholder="06/21">
+	          </div>
+	          <div class="mb-3">
+	            <label for="CVCCard" class="col-form-label">CVC</label>
+	            <input type="text" class="form-control" id="CVCCard" placeholder="123">
+	          </div>
+	          <div class="mb-3">
+
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+	        <button id="BookFromPay" disabled="true" type="button" class="btn btn-primary blueButton" data-bs-target="#ReceiptModal" data-bs-toggle="modal" data-bs-dismiss="modal">Prendre rendez-vous <img id="lockPay" src="assets/lockIcon.png" width="17px"></button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	</div>
+
+	<div class="modal fade" id="ReceiptModal" tabindex="-1" aria-labelledby="ReceiptModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="ReceiptModalLabel">Confirmation de rendez-vous</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="mb-3">
+	            <p>Vous avez bien pris un rendez vous avec <span id="expertReceipt"></span>.</p>
+	            <p>Le rendez vous est à <span id="timeReceipt"></span> au <span id="dateReceipt"></span>.</p>
+	            <p>Bonne fin de journée!</p>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn blueButton btn-primary" data-bs-dismiss="modal">Terminer</button>
 	      </div>
 	    </div>
 	  </div>

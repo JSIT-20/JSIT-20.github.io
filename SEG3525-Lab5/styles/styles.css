@@ -1,3 +1,8 @@
+body{
+	background-image: url("../assets/repeated-square.png");
+	padding-top: 80px;
+}
+
 #about{
 	width: 65%;
 	background-color: #f5f5f5;
@@ -29,6 +34,7 @@
 
 .navbar{
 	background-color: #f5f5f5;
+	border-bottom: 1px solid #dee2e6;
 }
 
 .blueText{
@@ -55,6 +61,11 @@
 	border-color: #36a6ad;
 }
 
+.blueButton:disabled{
+	background-color: #1c585c;
+	border-color: #1c585c;
+}
+
 .uitooltip {
 	padding: 8px;
     background:#00D500;
@@ -70,3 +81,8 @@
 #datepicker{
 	width: 100%;
 }
+
+.icon{
+	width: 35px;
+}
+
