@@ -64,7 +64,7 @@ function checkInputPayment(){
 function validateCardNumber(numberID){
 	var i = document.getElementById(numberID).value;
 
-	var filter = /[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}/
+	var filter = /[0-9]{4}\s?[0-9]{4}\s?[0-9]{4}\s?[0-9]{4}/
 	if(filter.test(i)){
 		return true;
 	}
