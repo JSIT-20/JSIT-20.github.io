@@ -31,6 +31,7 @@ function checkInputRV(){
 						all = true;
 						$("#PayInfo").prop("disabled", false);
 						$("#lockRV").hide();
+						$("#redText1").hide();
 					}
 				}
 			}
@@ -39,6 +40,7 @@ function checkInputRV(){
 	if(!all){
 		$("#PayInfo").prop("disabled", true);
 		$("#lockRV").show();
+		$("#redText1").show();
 	}
 }
 
@@ -51,6 +53,7 @@ function checkInputPayment(){
 					all = true;
 					$("#BookFromPay").prop("disabled", false);
 					$("#lockPay").hide();
+					$("#redText2").hide();
 				}
 			}
 		}
@@ -58,6 +61,7 @@ function checkInputPayment(){
 	if(!all){
 		$("#BookFromPay").prop("disabled", true);
 		$("#lockPay").show();
+		$("#redText2").show();
 	}
 }
 
