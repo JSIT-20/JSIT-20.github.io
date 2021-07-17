@@ -1,0 +1,347 @@
+
+    {
+        "weapons":
+                [
+                    {   "Name":"Kilo 141",
+                        "Type": "Assault Rifles",
+                        "Primary": true,
+                        "Codgame": "Modern Warfare",
+                        "MaxLevel": 69,
+                        "Attachments":[
+                            {
+                                "Muzzle":[
+                                    {"Flash Guard": 5},
+                                    {"Tactical Suppressor": 10},
+                                    {"Breacher Device": 19},
+                                    {"Muzzle Brake": 25},
+                                    {"Lightweight Suppressor": 37},
+                                    {"Compensator": 48},
+                                    {"Monolithic Suppressor": 68}
+                                ]
+                            },
+                            {
+                                "Barrel":[
+                                    {"Singuard Arms 16.6 SOCOM": 23},
+                                    {"Singuard Arms 19.8 Prowler": 38},
+                                    {"Singuard Arms Whisper": 52}
+                                ]
+                            },
+                            {
+                                "Laser":[
+                                    {"1mW Laser": 20},
+                                    {"5mW Laser":43},
+                                    {"Tac Laser": 57}
+                                ]
+                            },
+                            {
+                                "Optic":[
+                                    {"Operator Reflex Sight": 2},
+                                    {"Corp Combat Holo Sight": 4},
+                                    {"Aim-Op Reflex Sight": 6},
+                                    {"G.I Mini Reflex": 8},
+                                    {"Scout Combat Optic": 13},
+                                    {"APX5 Holographic Sight": 17},
+                                    {"Cronen LP945 Mini Reflex": 22},
+                                    {"4.0x Flip Hybrid": 26},
+                                    {"VLK 3.0x Optic": 29},
+                                    {"Integral Hybrid": 31},
+                                    {"Viper Reflex Sight": 34},
+                                    {"Cronen C480 Pro Optic": 41},
+                                    {"Solozero NVG Enhanced": 46},
+                                    {"Monocle Reflex Sight": 51},
+                                    {"Sniper Scope": 53},
+                                    {"Merc Thermal Optic": 56},
+                                    {"PBX Holo 7 Sight": 59},
+                                    {"Thermal Hybrid": 61},
+                                    {"Solozero Optics Mini Reflex": 64},
+                                    {"Canted Hybrid": 67},
+                                    {"Variable Zoom Scope": 69}
+                                ]
+                            },
+                            {
+                                "Stock":[
+                                    {"FORGE TAC Ultralight": 14},
+                                    {"Singuard Arms Sniper Pro": 39},
+                                    {"No Stock": 50},
+                                    {"FS Close Quarters Stock": 65}
+                                ]
+                            },
+                            {
+                                "Underbarrel":[
+                                    {"Commando Foregrip": 12},
+                                    {"M203 40mm Concussive": 18},
+                                    {"Merc Foregrip": 21},
+                                    {"M203 40mm Smokescreen":24},
+                                    {"12 Gauge Deputy": 28},
+                                    {"M203 40mm Recon": 32},
+                                    {"M203 40mm High-explosive": 35},
+                                    {"M203 40mm Flash": 40},
+                                    {"Tactical Foregrip": 45},
+                                    {"M203 40mm Incendiary": 49},
+                                    {"Operator Foregrip": 55},
+                                    {"Ranger Foregrip": 63},
+                                    {"Bipod": 66}
+                                ]
+                            },
+                            {
+                                "Ammunition":[
+                                    {"50 Round Mags": 9},
+                                    {"60 Rounds Mags": 30},
+                                    {"100 Round Drums": 58}
+                                ]
+                            },
+                            {
+                                "Rear Grip":[
+                                    {"Granulated Grip Tape (Rear Grip)": 15},
+                                    {"Rubberized Grip Tape (Rear Grip)": 42},
+                                    {"Stippled Grip Tape (Rear Grip)": 60}
+                                ]
+                            },
+                            {
+                                "Perks":[
+                                    {"FMJ": 3},
+                                    {"Heavy Hitter": 7},
+                                    {"Recon": 11},
+                                    {"Frangible - Wounding": 16},
+                                    {"Mo' Money": 27},
+                                    {"Fully Loaded": 33},
+                                    {"Sleight of Hand": 36},
+                                    {"Fast Melee": 44},
+                                    {"Burst": 47},
+                                    {"Frangible - Disabling": 54},
+                                    {"Presence of Mind": 62}
+                                ]
+                            }
+                        ]
+                    },
+                    {   "Name":"Ram-7",
+                        "Type": "Assault Rifles",
+                        "Primary": true,
+                        "Codgame": "Modern Warfare",
+                        "MaxLevel": 64,
+                        "Attachments":[
+                            {
+                                "Muzzle":[
+                                    {"Flash Guard": 2},
+                                    {"Breacher Device": 10},
+                                    {"Tactical Suppressor": 12},
+                                    {"Muzzle Brake": 18},
+                                    {"Lightweight Suppressor": 36},
+                                    {"Compensator": 41},
+                                    {"Monolithic Suppressor": 53}
+                                ]
+                            },
+                            {
+                                "Barrel":[
+                                    {"FTAC 13.5 Compact": 9},
+                                    {"Forge TAC Eclipse": 48},
+                                    {"XRK Ranger": 54}
+                                ]
+                            },
+                            {
+                                "Laser":[
+                                    {"1mW Laser": 30},
+                                    {"5mW Laser": 39},
+                                    {"Tac Laser": 49}
+                                ]
+                            },
+                            {
+                                "Optic":[
+                                    {"Cronen LP945 Mini Reflex": 3},
+                                    {"Corp Combat Holo Sight": 5},
+                                    {"Operator Reflex Sight": 7},
+                                    {"Scout Combat Optic": 11},
+                                    {"4.0x Flip Hybrid": 15},
+                                    {"Aim-Op Reflex Sight": 19},
+                                    {"APX5 Holographic Sight": 23},
+                                    {"Integral Hybrid": 27},
+                                    {"Solozero NVG Enhanced": 29},
+                                    {"VLK 3.0x Optic": 33},
+                                    {"Sniper Scope": 37},
+                                    {"Viper Reflex Sight": 42},
+                                    {"G.I Mini Reflex": 44},
+                                    {"PBX Holo 7 Sight": 45},
+                                    {"Cronen 2x2 Elite": 47},
+                                    {"Monocle Reflex Sight": 50},
+                                    {"Variable Zoom Scope": 57},
+                                    {"Canted Hybrid": 59},
+                                    {"Merc Thermal Optic": 60},
+                                    {"Thermal Hybrid": 62}
+                                ]
+                            },
+                            {
+                                "Stock":[
+                                    {"FTAC Equilibrium": 16},
+                                    {"XRK Ultralight Hollow": 28},
+                                    {"XRK Close Quarters Stock": 58}
+                                ]
+                            },
+                            {
+                                "Underbarrel":[
+                                    {"Commando Foregrip": 4},
+                                    {"M203 40mm High-explosive": 8},
+                                    {"M203 40mm Incendiary": 14},
+                                    {"12 Gauge Deputy": 17},
+                                    {"Merc Foregrip": 20},
+                                    {"M203 40mm Smokescreen": 25},
+                                    {"Tactical Foregrip": 34},
+                                    {"M203 40mm Recon": 34},
+                                    {"M203 40mm Flash": 51},
+                                    {"Ranger Foregrip": 56},
+                                    {"M203 40mm Concussive": 61},
+                                    {"Operator Foregrip": 63}
+                                ]
+                            },
+                            {
+                                "Ammunition":[
+                                    {"50 Round Mags": 24}
+                                ]
+                            },
+                            {
+                                "Rear Grip":[
+                                    {"Granulated Grip Tape (Rear Grip)": 15},
+                                    {"Rubberized Grip Tape (Rear Grip)": 42},
+                                    {"Stippled Grip Tape (Rear Grip)": 60}
+                                ]
+                            },
+                            {
+                                "Perks":[
+                                    {"FMJ": 3},
+                                    {"Heavy Hitter": 7},
+                                    {"Recon": 11},
+                                    {"Frangible - Wounding": 16},
+                                    {"Mo' Money": 27},
+                                    {"Fully Loaded": 33},
+                                    {"Sleight of Hand": 36},
+                                    {"Fast Melee": 44},
+                                    {"Burst": 47},
+                                    {"Frangible - Disabling": 54},
+                                    {"Presence of Mind": 62}
+                                ]
+                            }
+                        ]
+                    },
+                    {   "Name":"X16",
+                        "Type": "Pistol",
+                        "Primary": false,
+                        "Codgame": "Modern Warfare",
+                        "MaxLevel": 34,
+                        "Attachments":[
+                            {
+                                "Muzzle":[
+                                    {"Flash Guard": 2},
+                                    {"Monolithic Suppressor": 4},
+                                    {"Muzzle Brake": 10},
+                                    {"Oil Can Suppressor": 14},
+                                    {"Compensator": 19},
+                                    {"Lightweight Suppressor": 24},
+                                    {"Tactical Suppressor": 31}
+                                ]
+                            },
+                            {
+                                "Barrel":[
+                                    {"Singuard Arms Featherweight": 8},
+                                    {"Vanguard Elite": 22},
+                                    {"Singuard Arms Advantage": 33}
+                                ]
+                            },
+                            {
+                                "Laser":[
+                                    {"1mW Laser": 11},
+                                    {"Tac Laser": 16},
+                                    {"5mW Laser": 27}
+                                ]
+                            },
+                            {
+                                "Optic":[
+                                    {"Solozero Optics Mini Reflex": 7},
+                                    {"G.I Mini Reflex": 17},
+                                    {"Cronen LP945 Mini Reflex": 30}
+                                ]
+                            },
+                            {
+                                "Trigger Action":[
+                                    {"Lightweight Trigger": 6},
+                                    {"Heavy Duty Trigger": 21},
+                                    {"Match Grade Trigger": 34}
+                                ]
+                            },
+                            {
+                                "Ammunition":[
+                                    {"17 Round Mags": 13},
+                                    {"26 Rounds Mags": 28}
+                                ]
+                            },
+                            {
+                                "Rear Grip":[
+                                    {"Granulated Grip Tape (Rear Grip)": 18},
+                                    {"Stippled Grip Tape (Rear Grip)": 23},
+                                    {"X16 Stock": 25},
+                                    {"Rubberized Grip Tape (Rear Grip)": 35}
+                                ]
+                            },
+                            {
+                                "Perks":[
+                                    {"Fast Melee": 3},
+                                    {"Frangible - Wounding": 5},
+                                    {"Frangible - Disabling": 9},
+                                    {"FMJ": 12},
+                                    {"Mo' Money": 15},
+                                    {"Sleight of Hand": 20},
+                                    {"Recon": 26},
+                                    {"Heavy Hitter": 29},
+                                    {"Fully Loaded": 32},
+                                    {"Akimbo": 20}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+                ,
+            "Grenades":{
+                "Lethal": [
+                    "Termite",
+                    "Frag",
+                    "Semtex"
+                    
+
+                ],
+                "Tactical":[
+                    "Flash Grenade",
+                    "Smoke Grenade",
+                    "Stun Grenade",
+                    "Snapshot Grenade",
+                    "Heartbeat Sensor",
+                    "Gas Grenade",
+                    "Stim",
+                    "Decoy Grenade"
+                ]
+            },
+            "Perks":{
+                "Perk1":[
+                    "Double Time",
+                    "E.O.D",
+                    "Scavenger",
+                    "Cold-Blooded",
+                    "Kill Chain",
+                    "Quick Fix"
+                ],
+                "Perk2":[
+                    "Restock",
+                    "Hardline",
+                    "Overkill",
+                    "High Alert",
+                    "Ghost",
+                    "Pointman"
+                ],
+                "Perk3":[
+                    "Tune Up",
+                    "Amped",
+                    "Shrapnel",
+                    "Battle Hardened",
+                    "Spotter",
+                    "Tracker"
+                ]
+            }
+
+    }
